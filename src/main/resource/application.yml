@@ -1,0 +1,16 @@
+server:
+  port: 527
+
+spring:
+  application:
+    name: springboot-service
+  datasource:
+    url: jdbc:mysql://smsotm.rwlb.rds.aliyuncs.com:3306/resources?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
+    username: daihaochen
+    password: "v&5XU9aK2P22kM4pW"
+    driverClassName: com.mysql.jdbc.Driver
+
+mybatis:
+    mapper-locations: classpath*:com/haochen/springboot/mapper/*.xml
+    configuration:
+      map-underscore-to-camel-case: true  # 开启驼峰命名转换
